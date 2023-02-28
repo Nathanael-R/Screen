@@ -86,7 +86,7 @@ const Pricing = () => {
       <div className="max-w-[1500px] shadow-[2px_2px_10px_3px_gold] flex flex-col items-center justify-center m-auto py-10">
           <h2 className='sm:text-2xl text-xl font-bold m-4'>Download Our Mobile Application</h2>  
           <div className="flex sm:gap-4 flex-wrap items-center justify-center">
-          <button className=" w-48 flex items-center justify-center text-xl font-semibold border-yellow-400 border-2 py-3 px-5 gap-2 mb-4 sm:mb-0">Google Play<FaGooglePlay /></button>
+          <button className=" w-48 flex items-center justify-center text-xl font-semibold border-yellow-400 border-2 py-3 px-5 gap-2">Google Play<FaGooglePlay /></button>
           <button className=" w-48 flex items-center justify-center text-xl font-semibold border-yellow-400 border-2 py-3 px-5 gap-2">App Store<FaAppStore /></button>
           </div>      
       </div>

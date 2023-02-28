@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
         </div>
         <hr />
-        <p className="text-white/40 flex items-center m-auto"><FaCopyright className="mr-2"/> Copyright - Rhayne {thisYear.getFullYear()}</p>
+        <p className="text-white/40 flex items-center m-auto"><FaCopyright className="mr-2"/> Copyright - Nathanael {thisYear.getFullYear()}</p>
     </footer>
   )
 }

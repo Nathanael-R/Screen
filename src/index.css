@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;900&display=swap');
 body {
-  background-color: black
+  background-color: black;
+  font-family: Nunito,Helvetica, sans-serif;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: gold;
+  transition: width .3s;
+}
+nav ul li:hover::after{
+  width: 100%
 }
 @tailwind base;
 @tailwind components;

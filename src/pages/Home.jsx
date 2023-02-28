@@ -3,7 +3,7 @@ import Main from "../components/Main";
 import Upcoming from "../components/Upcoming";
 import endpoints from "../components/Endpoints";
 import Pricing from "../components/Pricing";
-import { Suspense } from "react";
+import Latest from "../components/Latest";
 const Home = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const Home = () => {
         Header="Popular Movies"
         apiURL={endpoints.popularRequest}
       />
-      <List rowID="2" Header="Latest Movies" apiURL={endpoints.latestRequest} />
+      <Latest />
       <Upcoming />
       <Pricing />
     </>
