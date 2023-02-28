@@ -31,7 +31,7 @@ const Main = () => {
           alt={movie?.title}
         />
       </div>
-      <div className="absolute w-full top-[17%] p-4 md:px-16 sm:px-8">
+      <div className="absolute w-full top-[20%] p-4 md:px-16 sm:px-8">
         <h1 className="lg:text-5xl text-4xl font-bold mb-8">{movie?.title}</h1>
         <p className="md:w-[35%]">{trim(movie?.overview, 150)}</p>
         <p className="text-gray-500 my-4">

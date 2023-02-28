@@ -3,9 +3,8 @@ import { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { UserAuth } from "../context/AuthContext";
 import { db } from "../firebase";
-import {  toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 
 const Movie = ({ item }) => {
   const trim = (str, num) => {
@@ -36,9 +35,7 @@ const Movie = ({ item }) => {
           img: item?.backdrop_path,
         }),
       });
-    } else (
-      alert('Please Log In')
-    )
+    } else alert("Please Log In");
   };
 
   return (
@@ -57,7 +54,9 @@ const Movie = ({ item }) => {
             {item?.release_date}
           </p>
         </div>
-        <p onClick={favorite}>{like ? <FaHeart size={20} /> && notif() : <FaRegHeart size={20} />}</p>
+        <p onClick={favorite}>
+          {like ? <FaHeart size={20} /> && notif() : <FaRegHeart size={20} />}
+        </p>
       </div>
     </div>
   );
